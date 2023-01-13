@@ -38,7 +38,7 @@ Basically there is a Kernel+Dropout+BatchNorm pattern that has been followed afe
 
 
 ## Results
-The best output is validation accuracy of 99.47 in the 19th epoch. Howerver 99.43% accuracy was hit in epoch 16
+The best output is validation accuracy of **99.47%** in the 19th epoch. Howerver **99.43%** accuracy was hit in epoch 16
 
 followign are the training dump
 ![alt text](images/Training_logs.png "Title")
