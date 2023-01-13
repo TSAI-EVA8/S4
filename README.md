@@ -1,5 +1,5 @@
 ## Problem Statement
-This is the assignment based on the Session 2. We are expected to train a network as shown below
+This is the Part1 of the Session4. We are expected to train a network as shown below
 ![alt text](images/network.png "Title")
 
 Some of the details of what we have done: 
@@ -13,11 +13,11 @@ Some of the details of what we have done:
 
   ### Training Steps
  The training will involve 3 steps. 
-  * First we need to find out what is the current behavior of the network by passing a input set. This is the **feed forward step**. In the feedforward step , the values of the neurons is changed. The equations that determine the calculations is described in the document [FormulaDerivations.ipynb](https://github.com/TSAI-END3-Group/Session_2_Assignment/blob/master/FormulaDerivations.ipynb) .
+  * First we need to find out what is the current behavior of the network by passing a input set. This is the **feed forward step**. In the feedforward step , the values of the neurons is changed. The equations that determine the calculations is described in the document [FormulaDerivations.ipynb](https://github.com/TSAI-EVA8/S4/blob/master/FormulaDerivations.ipynb) .
 
   * Compare the output against the ground truth (what was the expected output). this is what is the Loss or the Error 
 
-  * Calculate the change in the parameters w.r.t. the error or in other words,  adjust the weights of the parameters such that the overall error is reduced. The change is calculated using **backpropogation**. We have discussed the various equations that will be used in the document [FormulaDerivations.ipynb](https://github.com/TSAI-END3-Group/Session_2_Assignment/blob/master/FormulaDerivations.ipynb)
+  * Calculate the change in the parameters w.r.t. the error or in other words,  adjust the weights of the parameters such that the overall error is reduced. The change is calculated using **backpropogation**. We have discussed the various equations that will be used in the document [FormulaDerivations.ipynb](https://github.com/TSAI-EVA8/S4/blob/master/FormulaDerivations.ipynb)
 
   __Note: In the FeedForward step the value of the neurons is changed while in the backprop step the value of the parameters is changed__
 
@@ -39,7 +39,7 @@ Some of the details of what we have done:
 
 ## Outputs
 
-1. Refer to the [Assignment_2_NN_Propogation.xlsx](https://github.com/TSAI-END3-Group/Session_2_Assignment/blob/master/Assignment_2_NN_Propogation.xlsx) for the excel sheet showing backprop calculations. 
+1. Refer to the [Assignment_Part1.xlsx](https://github.com/TSAI-EVA8/S4/blob/master/Assignment_Part1.xlsx) for the excel sheet showing backprop calculations. 
 
 Below is the screenshot of the Excel that has been created.
  ![alt text](images/Screenshot_Assignment_2.png "Title")
@@ -49,7 +49,7 @@ Below is the screenshot of the Excel that has been created.
 
 
 
-3. Refer to the [FormulaDerivations.ipynb](https://github.com/TSAI-END3-Group/Session_2_Assignment/blob/master/FormulaDerivations.ipynb) where we have explained the various formula derivations and how the learning happens
+3. Refer to the [FormulaDerivations.ipynb](https://github.com/TSAI-EVA8/S4/blob/master/FormulaDerivations.ipynb) where we have explained the various formula derivations and how the learning happens
 
 4. Below are the various error graphs that we got after using the various Learning rates as asked for [0.1, 0.2, 0.5, 0.8, 1.0, 2.0] 
 
@@ -57,14 +57,20 @@ Below is the screenshot of the Excel that has been created.
 ### Error graphs 
 For the various Learning Rates we see the error goes down differently. At the lowere LR the decrease in error is very slow and hence the learning is also slow. While for LR>=1 the error seem to go down very fast and that shows that the learning is fast at higher LR
 
-Below are the error graphs obtained at different LRs
+
+From the Excel LRChart Sheet screenshot shows the curve
+
+![alt text](images/screenshot_Loss_Learning_rates.png "Title")
+
+
+
+Below are the error graphs obtained at different LRs (just the chart)
 
 ![alt text](images/Loss_various_LR.png "Title")
 
 The above image is a comparison of effect of LR on the Loss.
 Learning curve is on the the training dataset and gives an idea of how well the model is learning with each epoch
 
-In the previous assignment we had discussed the effect of the LR on the network training (https://github.com/TSAI-END3-Group/Session_1_Assignment/blob/main/questions.ipynb) 
 
 Some observations: 
 1. The graph clearly shows that the learning was very slow when the LR was 0.1,0.2. The error was reducing very slowly with each epoch
@@ -74,13 +80,7 @@ Some observations:
 
 ## Repository Files
 
-1. [FormulaDerivations.ipynb](https://github.com/TSAI-END3-Group/Session_2_Assignment/blob/master/FormulaDerivations.ipynb) : All the mathematical derivations
+1. [FormulaDerivations.ipynb](https://github.com/TSAI-EVA8/S4/blob/master/FormulaDerivations.ipynb) : All the mathematical derivations
 
-2. [Assignment_2_NN_Propogation.xlsx](https://github.com/TSAI-END3-Group/Session_2_Assignment/blob/master/Assignment_2_NN_Propogation.xlsx) : The Excel Output file
+2. [Assignment_Part1.xlsx](https://github.com/TSAI-EVA8/S4/blob/master/Assignment_Part1.xlsx) : The Excel Output file
 
-
-## Contributors
-* Rohit Agarwal
-* Vivek Kumar
-* Kushal Gandhi
-* Ammishaddai U
